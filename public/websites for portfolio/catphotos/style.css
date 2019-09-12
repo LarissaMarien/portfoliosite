@@ -1,0 +1,366 @@
+:root {
+	font-size: 62.5%;
+	font-family: 'Rajdhani', sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+header {
+  width: 100vw;
+  margin: 0;
+}
+
+img {
+  height: 20rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20rem;
+  margin-top: -3rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  margin-top: 1rem;
+}
+
+nav a {
+  font-weight: 700;
+  font-size: 2.3rem;
+  text-decoration: none;
+  color: rgb(81,82,84);
+  margin-right: 2rem;
+  text-align: center;
+  align-self: center;
+}
+
+a:hover {
+  color: black;
+}
+
+nav a:last-child {
+  margin-right: 0rem;
+}
+
+form {
+    position: relative;
+    top: 5rem;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 40px;
+    height: 40px;
+    background: rgb(249,179,54);
+    border-radius: 25px;
+    border: 4px solid rgb(249,179,54);
+    padding: 2px;
+}
+
+input {
+    width: 100%;;
+    height: 32.5px;
+    outline: 0;
+    border: 0;
+    font-size: 1.8em;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: rgb(249,179,54);
+    color: black;
+}
+
+.button {
+    padding: 10px;
+    width: 32.5px;
+    height: 32.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: black;
+    transition: all 1s;
+}
+
+form:hover{
+    width: 200px;
+}
+
+form:hover input{
+    display: block;
+}
+
+form:hover .button{
+    background: white;
+}
+
+.searchglass {
+  width: 20px;
+  height: 21px;
+  margin-top: -5px;
+  margin-left: -2.5px;
+  background-image: url("search.png");
+  background-size: cover;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1rem;
+  grid-auto-rows: 15rem;
+	width: 100vw;
+	height: 75vh;
+	margin: 6rem auto;
+  grid-template-areas:  "pica pica"
+                        "picb picc"
+                        "picd pice"
+                        "picd picf"
+                        "picg pich"
+                        "pici pici"
+                        "pici pici"
+                        "picj pick"
+                        "picl picm"
+                        "picn picm"
+                        "pico picp"
+                        "picq picq"
+                        "picr pics"
+                        "picr pict"
+                        "picu picv"
+                        "picw picw"
+                        "picx picy";
+}
+
+.pica {
+  grid-area: pica;
+}
+.picb {
+  grid-area: picb;
+}
+.picc {
+  grid-area: picc;
+}
+.picd {
+  grid-area: picd;
+}
+.pice {
+  grid-area: pice;
+}
+.picf {
+  grid-area: picf;
+}
+.picg {
+  grid-area: picg;
+}
+.pich {
+  grid-area: pich;
+}
+.pici {
+  grid-area: pici;
+}
+.picj {
+  grid-area: picj;
+}
+.pick {
+  grid-area: pick;
+}
+.picl {
+  grid-area: picl;
+}
+.picm {
+  grid-area: picm;
+}
+.picn {
+  grid-area: picn;
+}
+.pico {
+  grid-area: pico;
+}
+.picp {
+  grid-area: picp;
+}
+.picq {
+  grid-area: picq;
+}
+.picr {
+  grid-area: picr;
+}
+.pics {
+  grid-area: pics;
+}
+.pict {
+  grid-area: pict;
+}
+.picu {
+  grid-area: picu;
+}
+.picv {
+  grid-area: picv;
+}
+.picw {
+  grid-area: picw;
+}
+.picx {
+  grid-area: picx;
+}
+.picy {
+  grid-area: picy;
+}
+
+.gallery > div {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+h2 {
+	height: 100%;
+	color: transparent;
+	background-color: transparent;
+	transition-duration: .5s;
+	padding: 2.5rem;
+	font-size: 2rem;
+  font-weight: 400;
+	line-height: 2.2rem;
+}
+
+h2 span {
+	display: block;
+	font-style: italic;
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+div:hover > h2 {
+	color: white;
+	background-color: rgba(249,179,54,0.6);
+}
+
+footer {
+  background-color: rgb(249,179,54);
+  font-size: 2rem;
+  font-weight: 700;
+  position: absolute;
+  top: 500vh;
+  width: 100vw;
+  height: 30vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+footer p {
+  line-height: 5rem;
+}
+
+li {
+  display: inline;
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+li a {
+  margin-bottom: 1rem;
+  color: lightgrey;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+button {
+  position: relative;
+  bottom: 3rem;
+  left: 1rem;
+  padding: 0.5rem;
+  border-radius: 15px;
+  background-color: rgb(249,179,54);
+  border: none;
+  font-weight: 700;
+}
+
+.onzichtbaar {
+  display: none;
+}
+
+.geselecteerd {
+  display: inline;
+}
+
+@supports (grid-area: auto) {
+
+@media (min-width: 800px) {
+      .gallery {
+      	grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 20rem;
+        grid-template-areas:  "pica pica picb"
+                              "picc picd picb"
+                              "pice picf picf"
+                              "picg pich picj"
+                              "picg pici pici"
+                              "pick pici pici"
+                              "picl picn picm"
+                              "pico picp picm"
+                              "picq picq pics"
+                              "pict picr picu"
+                              "picv picr picx"
+                              "picy picw picw";
+      }
+      h2 {
+      	font-size: 3rem;
+      }
+
+      h2 span {
+        font-size: 1.7rem;
+        margin-top: 1.2rem;
+      }
+      footer {
+        top: 465vh;
+      }
+
+  }
+@media (min-width: 1000px) {
+			header {
+				width: 95vw;
+				margin-left: auto;
+				margin-right: auto;
+			}
+      nav {
+        margin-top: -9rem;
+      }
+      form {
+          top: -9rem;
+          left: 90vw;
+          transform: translate(-95%,-5%);
+      }
+      .gallery {
+        grid-auto-rows: 25rem;
+      	width: 85vw;
+      	height: 75vh;
+        grid-template-areas:  "pica pica picb"
+                              "picc picd picb"
+                              "pice picf picf"
+                              "picg pich picj"
+                              "picg pici pici"
+                              "pick pici pici"
+                              "picl picn picm"
+                              "pico picp picm"
+                              "picq picq pics"
+                              "pict picr picu"
+                              "picv picr picx"
+                              "picy picw picw";
+      }
+      h2 {
+      	font-size: 4rem;
+      }
+
+      h2 span {
+        font-size: 2rem;
+        margin-top: 1.5rem;
+      }
+      footer {
+        top: 545vh;
+      }
+  }
+}

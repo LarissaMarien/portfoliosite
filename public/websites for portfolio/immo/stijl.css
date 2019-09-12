@@ -1,0 +1,429 @@
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: lightgrey;
+  font-size: 1.3rem;
+}
+
+header {
+  padding: 1rem;
+  margin-top: 2rem;
+  position: relative;
+}
+
+header h1{
+  font-family: 'Unica One', cursive;
+  font-size: 3rem;
+}
+
+.logo {
+  background-image: url("logo.png");
+  height: 6rem;
+  width: 22rem;
+  margin-bottom: 1rem;
+  margin-top: -1.5rem;
+  background-size: cover;
+  animation: rotation 4s infinite linear;
+  transform-origin: center;
+}
+
+@keyframes rotation {
+		0% {
+				transform: rotate(-5deg);
+		}
+		50% {
+				transform: rotate(5deg);
+		}
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+.boven {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.boven a {
+  margin-right: 1.5rem;
+  text-decoration: underline;
+  color: black;
+}
+
+.onder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-right: 0.5rem;
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.onder a {
+  font-size: 1.75rem;
+  text-decoration: none;
+  color: rgba(255,255,255,0.5);
+}
+
+.onder .geselecteerd {
+  color: black;
+}
+
+.bar {
+  display: block;
+  height: 0.2rem;
+  width: 100vw;
+  background-image: linear-gradient(black, grey, lightgrey);
+}
+
+main {
+  margin-top: 2.5rem;
+  max-width: 700px;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  margin-bottom: 1rem;
+}
+
+.picturebox {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  height: 55vw;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+img {
+      animation-name: fotoslider;
+      animation-duration: 45s;
+      animation-iteration-count: infinite;
+      animation-delay: 5s;
+      height: 55vw;
+      width: 80vw;
+}
+
+@keyframes fotoslider {
+      5%, 15% {
+            transform: translatex(-80vw);
+      }
+      20%, 30% {
+            transform: translatex(-160vw);
+      }
+      35%, 45% {
+            transform: translatex(-240vw);
+      }
+      50%, 60% {
+            transform: translatex(-320vw);
+      }
+      65%, 100% {
+            transform: translatex(0px);
+      }
+}
+
+h4 {
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.contactbox h4 {
+  margin-top: 0rem;
+}
+
+.info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.beschrijving button {
+  margin-top: 1rem !important;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+table {
+  text-align: left;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+td {
+	padding: 6px;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+legend {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  color: grey;
+}
+
+input,textarea {
+  font: inherit;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+
+.contactbox {
+  padding: 2rem 1rem 1rem 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  border: 1px solid black;
+  background-color: white;
+  box-shadow: 0 0 .25em rgba(0, 0, 0, 0.5);
+}
+
+.items label {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.items label, .items input,.items .form-help,.items textarea {
+  width: 100%;
+  max-width: 80rem;
+  box-sizing: border-box;
+}
+
+.items input,.items textarea {
+  padding: 0.3em 0.3em 0.3em;
+  border: 1px solid lightgrey;
+  border-radius: 0.3em;
+  font-size: 1.2rem;
+}
+
+.hulpzin {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  font-size: 1.2rem;
+}
+
+input:focus + .hulpzin {
+  padding: 1rem;
+  margin-top: 0.5rem;
+  border: 1px solid red;
+  border-radius: 0.5rem;
+  font-style: italic;
+  color: grey;
+  background-color: white;
+  position: static;
+  width: auto;
+  height: auto;
+  crop: none;
+}
+
+select {
+    width: 257px;
+    font-size: 1.2rem;
+    color: grey;
+    height: 35px;
+    background-color: rgba(255,255,255,0.7);
+}
+
+button, input[type="submit"]  {
+    font-size: 1.5rem;
+    width: 230px;
+    background-color: black;
+    padding: 8px 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    display: block;
+    border-radius: 15px;
+    color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+}
+
+footer p {
+  line-height: 2rem;
+}
+
+li {
+  display: inline;
+}
+
+li a{
+  margin-bottom: 1rem;
+  color: grey;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@supports (grid-area: auto) {
+
+@media (min-width: 800px) {
+          main {
+            max-width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "titel titel"
+                                  "box box"
+                                  "beschrijving beschrijving"
+                                  "eigenschappen contact";
+          }
+
+          .info, button {
+            display: none;
+          }
+
+          .titel {
+            grid-area: titel;
+          }
+
+          .kader {
+            grid-area: box;
+            margin-left: auto;
+            margin-right: auto;
+          }
+
+          .beschrijving {
+            grid-area: beschrijving;
+          }
+
+          .eigenschappen {
+            grid-area: eigenschappen;
+          }
+
+          .boxcontact {
+
+            grid-area: contact;
+          }
+
+          .picturebox {
+            width: 50vw;
+            margin-right: 0rem;
+            height: 35vw;
+          }
+
+          img {
+            height: 35vw;
+            width: 50vw;
+          }
+
+          @keyframes fotoslider {
+                5%, 15% {
+                      transform: translatex(-50vw);
+                }
+                20%, 30% {
+                      transform: translatex(-100vw);
+                }
+                35%, 45% {
+                      transform: translatex(-150vw);
+                }
+                50%, 60% {
+                      transform: translatex(-200vw);
+                }
+                65%, 100% {
+                      transform: translatex(0px);
+                }
+          }
+
+  }
+
+  @media (min-width: 1000px) {
+            main {
+              max-width: none;
+              margin-left: 5rem;
+              margin-right: 5rem;
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+              grid-row-gap: 2rem;
+              grid-template-areas: "titel titel titel"
+                                    "beschrijving beschrijving box"
+                                    "eigenschappen eigenschappen contact";
+            }
+
+            .info, button {
+              display: block;
+            }
+
+            .kader {
+              margin-top: auto;
+              margin-bottom: auto;
+            }
+
+            .picturebox {
+              width: 40vw;
+              margin-right: 0rem;
+              margin-left: 5rem;
+              height: 27vw;
+            }
+
+            img {
+              height: 27vw;
+              width: 40vw;
+            }
+
+            @keyframes fotoslider {
+                  5%, 15% {
+                        transform: translatex(-40vw);
+                  }
+                  20%, 30% {
+                        transform: translatex(-80vw);
+                  }
+                  35%, 45% {
+                        transform: translatex(-120vw);
+                  }
+                  50%, 60% {
+                        transform: translatex(-160vw);
+                  }
+                  65%, 100% {
+                        transform: translatex(0px);
+                  }
+            }
+
+            footer p {
+              display: inline;
+              margin-right: 2rem;
+            }
+
+            footer ul {
+              display: inline;
+            }
+
+    }
+}

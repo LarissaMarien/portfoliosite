@@ -1,0 +1,17 @@
+<% include header %>
+<link rel="stylesheet" href="/css/style work.css">
+
+  <%
+    var blogLength = postsArray.length;
+    for(var postIndex=0; postIndex<blogLength; postIndex++) {
+  %>
+  <section>
+    <% var post = postsArray[postIndex] %>
+    <% include blogpost %>
+  </section>
+  <%
+    }
+  %>
+
+
+<% include footer %>

@@ -1,0 +1,213 @@
+html,body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.8;
+  font-size: 16px;
+  background: #FFFAFA;
+  color: #848484;
+  font-weight: 300;
+  padding: 0px;
+	margin: 0px;
+}
+body.offcanvas {
+  overflow: hidden;
+}
+
+nav a {
+  background-color: transparent;
+  font-variant: small-caps;
+}
+
+nav a:hover {
+  text-decoration: none !important;
+  color: #2da9d7 !important;
+}
+nav a:active, a:focus {
+  outline: none;
+}
+
+p, ul, ol {
+  margin-bottom: 1.5em;
+  font-size: 15px;
+  color: #848484;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  text-decoration: none;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+#myheader {
+  padding-top: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#myheader #logobox img {
+  max-width: 30%;
+
+}
+#myheader nav {
+  padding-top: 40px;
+}
+#myheader nav ul {
+  padding: 0;
+  margin: 0;
+}
+#myheader nav ul li {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  zoom: 1;
+  display: inline;
+  list-style: none;
+  font-size: 15px;
+}
+#myheader nav ul li a {
+  color: #999999 !important;
+  padding: 10px;
+  text-decoration: none;
+}
+@media screen and (max-width: 480px) {
+  #myheader nav ul li a {
+    padding: 5px;
+  }
+}
+#myheader nav ul li a:hover, #myheader nav ul li a:active, #myheader nav ul li a:focus {
+  color: #000 !important;
+  text-decoration: none;
+  outline: none;
+}
+#myheader nav ul li.active a {
+  text-decoration: line-through !important;
+  color: black !important;
+}
+
+#myfooter {
+  float: left;
+  width: 100%;
+  background: #ebebeb;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #999999;
+}
+
+#myfooter nav ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+#myfooter nav ul li {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  display: inline;
+  list-style: none;
+  font-size: 15px;
+}
+#myfooter nav ul li a {
+  color: #999999 !important;
+  padding: 10px;
+  text-decoration: none;
+}
+@media screen and (max-width: 480px) {
+  #myfooter nav ul li a {
+    padding: 5px;
+  }
+}
+#myfooter nav ul li a:hover, #myfooter nav ul li a:active, #myfooter nav ul li a:focus {
+  color: #000 !important;
+  text-decoration: none;
+  outline: none;
+}
+#myfooter nav ul li.active a {
+  text-decoration: line-through !important;
+  color: black !important;
+}
+
+/*main*/
+
+.ballbox {
+  height: 35vh;
+  margin-bottom: 16vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15vh;
+  width: 80%;
+  position: relative;
+}
+
+.email {
+  position: absolute;
+  height: 20vh;
+  width: 20vh;
+  background-image: url('/img/mailicon.png');
+  background-size: cover;
+  left: 10vh;
+  margin-top: 7.5vh;
+}
+
+.fb {
+  position: absolute;
+  height: 20vh;
+  width: 20vh;
+  background-image: url('/img/fbicon.png');
+  background-size: cover;
+  left: 40vh;
+  margin-top: 7.5vh;
+}
+
+.insta {
+  position: absolute;
+  height: 20vh;
+  width: 20vh;
+  background-image: url('/img/instaicon.png');
+  background-size: cover;
+  left: 70vh;
+  margin-top: 7.5vh;
+}
+
+.twitter {
+  position: absolute;
+  height: 20vh;
+  width: 20vh;
+  background-image: url('/img/twiticon.png');
+  background-size: cover;
+  left: 100vh;
+  margin-top: 7.5vh;
+}
+
+.codepen {
+  position: absolute;
+  height: 20vh;
+  width: 20vh;
+  background-image: url('/img/codeicon.png');
+  background-size: cover;
+  left: 130vh;
+  margin-top: 7.5vh;
+}
+
+.email:hover {
+  background-image: url('/img/mailiconW.png');
+}
+
+.fb:hover {
+  background-image: url('/img/fbiconW.png');
+}
+
+.insta:hover {
+  background-image: url('/img/instaiconW.png');
+}
+
+.twitter:hover {
+  background-image: url('/img/twiticonW.png');
+}
+
+.codepen:hover {
+  background-image: url('/img/codeiconW.png');
+}

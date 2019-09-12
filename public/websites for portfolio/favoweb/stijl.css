@@ -1,0 +1,108 @@
+:root {
+  font-size: 62.5%;
+  font-family: 'Staatliches', cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: .5vh;
+  background-color: black;
+}
+
+h1 {
+  font-size: 5vw;
+  margin: 0.5rem;
+  text-align: center;
+  font-family: 'Faster One', cursive;
+  color: white;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 150vh;
+}
+
+a {
+  display: block;
+  height: 100%;
+  position: relative;
+}
+
+li {
+  flex: 1 1 20rem;
+  background-image: url(https://i.pinimg.com/236x/9e/45/96/9e45966313bdbc160ac3f3fffa7fc187--normal-map-textile.jpg);
+  margin: .5vh;
+  background-size: cover;
+  background-position: center;
+  border: 5px solid white;
+}
+
+li:first-child {
+  background-image: url(https://lh4.ggpht.com/3RG_Y8JPK0Hcyui9OcapiONP_aDWKTRZ50wqZW_wbyOF0FamAYEYZfMTW9Cs1OT1kA);
+}
+li:nth-child(2) {
+  background-image: url(https://s3-storage.textopus.nl/wp-content/uploads/2018/03/09172543/nieuwe-features-instagram2-512x324.jpg);
+}
+li:nth-child(3) {
+  background-image: url(https://www.verticalresponse.com/blog/wp-content/uploads/2013/02/pinterest-logo.png);
+}
+li:nth-child(4) {
+  background-image: url(https://9to5mac.com/wp-content/uploads/sites/6/2017/08/youtube_logo_dark.jpg?quality=82&strip=all&w=1200);
+}
+li:nth-child(5) {
+  background-image: url(https://www.xda-developers.com/files/2018/03/gmail-logo.png);
+}
+li:nth-child(6) {
+  background-image: url(http://www.caleidoscope.in/wp-content/uploads/2011/12/Wikipedia-logo-1024x576.jpg);
+}
+li:nth-child(7) {
+  background-image: url(https://it.fitnyc.edu/wp-content/uploads/2016/04/lynda.com-Logo-and-Website.jpg);
+}
+li:nth-child(8) {
+  background-image: url(https://lh3.googleusercontent.com/proxy/_IPS60rDWWoKW3gIA9WOV6Hyr8E056oi5iNFUPKVVa05naR3wcKKImDaI5H9GvH-gbz3_Z6NSWtzgshL2UZmS_1VrlPYP7xRxBiszi9E-fAWWPDqRbvshReVxhvRSTZ1aMUyNBNslvHB=w1392-h730-p-rw);
+}
+li:nth-child(9) {
+  background-image: url(https://codepen.io/GeorgePark/pen/qKJQaQ/image/large.png);
+}
+li:nth-child(10) {
+  background-image: url(http://www.madeinantwerpen.be/wp-content/uploads/2016/10/APcollege.jpg);
+}
+li:nth-child(11) {
+  background-image: url(https://www.ecommercenews.nl/wp-content/uploads/2016/11/bolcom-740x393.jpg);
+}
+li:nth-child(12) {
+  background-image: url(https://is4-ssl.mzstatic.com/image/thumb/Purple114/v4/54/e8/9c/54e89c57-b446-5abe-ee09-07f2b293d301/AppIcon-0-1x_U007emarketing-0-0-85-220-0-10.png/1200x630wa.png);
+}
+
+li a:hover {
+  background-color: rgba(0,255,0,0.8);
+}
+
+h4 {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+
+li:nth-child(6) > a > h4, li:nth-child(10) > a > h4, li:nth-child(12) > a > h4 {
+  color: black;
+}
+
+@supports (grid-area: auto) {
+
+@media (min-width: 800px) {
+      ul {
+        flex-direction: column;
+        height: 87vh;
+      }
+      li {
+        flex: 1 1 15rem;
+      }
+  }

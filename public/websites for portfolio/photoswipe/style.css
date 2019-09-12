@@ -1,0 +1,87 @@
+html {
+  background-color: black;
+  font-family: 'Text Me One', sans-serif;
+}
+
+.head {
+  position: absolute;
+  width: 20vw;
+  height: 90vh;
+  padding-left: 2%;
+  padding-right: 20px;
+}
+
+h1 {
+  color: white;
+  font-family: 'Unica One', cursive;
+  font-size: 40px;
+  animation-name: logo;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes logo {
+      50% {
+            color: crimson;
+      }
+      100% {
+            color: white;
+      }
+}
+
+nav a {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: white;
+  font-variant: small-caps;
+}
+
+nav a:hover {
+  color: crimson;
+}
+
+.my-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  position: absolute;
+  right: 15px;
+  width: 74%;
+  height: 95vh;
+}
+
+.my-gallery img {
+  padding-left: 40px;
+  width: 80%;
+  height: auto;
+}
+
+.my-gallery figure {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin: 5px;
+}
+
+.my-gallery figcaption {
+  display: none;
+}
+
+.pswp__caption {
+  margin-bottom: 10px;
+}
+
+.pswp__caption__center {
+  font-size: 30px;
+  color: white;
+  font-family: 'Expletus Sans', cursive;
+  text-align: center;
+}
+
+.pswp__bg {
+  background-color: rgba(0,0,0,0.6);
+}

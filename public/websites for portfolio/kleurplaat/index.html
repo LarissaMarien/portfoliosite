@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Website with P5</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Outline" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="title"><h1>Emoji</h1><h1>Exploji</h1></div>
+
+    <div class="sizebuttons">
+      <button onclick="changeBrush(15,this);" class="Sbutton big active">L</button>
+      <button onclick="changeBrush(10,this);" class="Sbutton medium">M</button>
+      <button onclick="changeBrush(5,this);" class="Sbutton small">S</button>
+    </div>
+
+    <div class="buttons">
+      <button onclick="changeColor(0,0,0,this);" class="button black"></button>
+      <button onclick="changeColor(255,0,0,this);" class="button red"></button>
+      <button onclick="changeColor(255,205,0,this);" class="button yellow"></button>
+      <button onclick="changeColor(154,205,50,this);" class="button green"></button>
+      <button onclick="changeColor(0,0,255,this);" class="button blue"></button>
+      <button onclick="changeColor(173,216,230,this);" class="button lightblue"></button>
+      <button onclick="changeColor(255,182,193,this);" class="button pink"></button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

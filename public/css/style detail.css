@@ -1,0 +1,238 @@
+html,body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.8;
+  font-size: 16px;
+  background: #FFFAFA;
+  color: #848484;
+  font-weight: 300;
+  padding: 0px;
+	margin: 0px;
+}
+body.offcanvas {
+  overflow: hidden;
+}
+
+nav a {
+  background-color: transparent;
+  font-variant: small-caps;
+}
+
+nav a:hover {
+  text-decoration: none !important;
+  color: #2da9d7 !important;
+}
+nav a:active, a:focus {
+  outline: none;
+}
+
+p, ul, ol {
+  margin-bottom: 1.5em;
+  font-size: 15px;
+  color: #848484;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: dimgrey;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  text-decoration: none;
+}
+
+#myheader {
+  padding-top: 40px;
+  text-align: center;
+}
+#myheader #logobox img {
+  max-width: 30%;
+
+}
+#myheader nav {
+  padding-top: 40px;
+}
+#myheader nav ul {
+  padding: 0;
+  margin: 0;
+}
+#myheader nav ul li {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  zoom: 1;
+  display: inline;
+  list-style: none;
+  font-size: 15px;
+}
+#myheader nav ul li a {
+  color: #999999 !important;
+  padding: 10px;
+  text-decoration: none;
+}
+@media screen and (max-width: 480px) {
+  #myheader nav ul li a {
+    padding: 5px;
+  }
+}
+#myheader nav ul li a:hover, #myheader nav ul li a:active, #myheader nav ul li a:focus {
+  color: #000 !important;
+  text-decoration: none;
+  outline: none;
+}
+#myheader nav ul li.active a {
+  text-decoration: line-through !important;
+  color: black !important;
+}
+
+#myfooter {
+  float: left;
+  width: 100%;
+  background: #ebebeb;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #999999;
+}
+
+#myfooter nav ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+#myfooter nav ul li {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  display: inline;
+  list-style: none;
+  font-size: 15px;
+}
+#myfooter nav ul li a {
+  color: #999999 !important;
+  padding: 10px;
+  text-decoration: none;
+}
+@media screen and (max-width: 480px) {
+  #myfooter nav ul li a {
+    padding: 5px;
+  }
+}
+#myfooter nav ul li a:hover, #myfooter nav ul li a:active, #myfooter nav ul li a:focus {
+  color: #000 !important;
+  text-decoration: none;
+  outline: none;
+}
+#myfooter nav ul li.active a {
+  text-decoration: line-through !important;
+  color: black !important;
+}
+
+/*main*/
+
+.blogpic {
+  height: auto;
+  width: 43vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 10vh;
+}
+
+.blogtextblock {
+  width: 43vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5vh;
+}
+
+.blogtextblock > h1 {
+  text-align: center;
+  font-variant: small-caps;
+}
+
+.detailbar {
+  display: flex;
+  justify-content: space-around;
+  font-variant: small-caps;
+}
+
+.vvbuttons {
+  display: flex;
+  justify-content: space-around;
+  width: 30vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10vh;
+  margin-top: 5vh;
+}
+
+.vvbuttons a {
+  display: block;
+  width: 5.5vw;
+  height: 2vw;
+  text-align: center;
+  background: #983121;
+  color: indianred;
+  transition: .5s;
+  text-decoration: none;
+  font-variant: small-caps;
+}
+
+.vvbuttons a::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgb(233,196,106);
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+.vvbuttons a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 1.5vh rgb(233,196,106);
+}
+
+.vvbuttons a:hover {
+  color: rgb(233,196,106);
+  box-shadow: 0 0 1vh rgb(233,196,106);
+  text-shadow: 0 0 1vh rgb(233,196,106);
+}
+
+li a:link {
+  text-decoration: none;
+  color: grey;
+}
+
+li a:hover {
+  text-decoration: none;
+  color: #983121;
+}
+
+li a:visited {
+  text-decoration: none;
+  color: rgb(233,196,106);
+}
+
+iframe {
+  width: 40vw;
+  height: 45vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 5vh;
+}
+
+.displaynone {
+  display: none;
+}
+
+#extrapic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; 
+  margin-bottom: 5vh;
+}

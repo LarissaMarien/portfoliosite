@@ -1,0 +1,226 @@
+@font-face {
+    font-family: mustardo;
+    src: url(mustardo.ttf);
+}
+
+body {
+      display: grid;
+      grid-template-columns: 100vw 50vw;
+      background-color: #091540;
+      position: relative;
+}
+
+section {
+  height: 100vh;
+}
+
+h1 {
+  font-family: mustardo;
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 4.5vw;
+  left: 2vw;
+  transform: rotate(-15deg);
+}
+
+h2 {
+  font-family: mustardo;
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  top: 3vw;
+  left: 3vw;
+  transform: rotate(-15deg);
+}
+
+p {
+  position: absolute;
+  top: 5vw;
+}
+
+.arrow {
+  position: absolute;
+  top: 2vw;
+  left: 92vw;
+  width: 80px;
+  filter: invert(100%);
+  transform: scaleX(-1);
+  animation-name: arrowmove;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes arrowmove {
+  0% {
+    transform: scaleX(-1) rotate(0deg);
+  }
+  50% {
+    transform: scaleX(-1) rotate(15deg);
+  }
+  100% {
+    transform: scaleX(-1) rotate(0deg);
+  }
+}
+
+.cirkels {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid white;
+  transition: transform 1s;
+}
+
+.cirkelsapart {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid white;
+}
+
+#cirkel1 {
+  left: 10vw;
+  top: 10vw;
+}
+
+#cirkel2 {
+  left: 27vw;
+  top: 24vw;
+}
+
+#cirkel3 {
+  left: 75vw;
+  top: 3vw;
+}
+
+#cirkel4 {
+  left: 60vw;
+  top: 17vw;
+}
+
+#cirkel5 {
+  left: 5vw;
+  top: 30vw;
+}
+
+#cirkel5:hover {
+  animation-name: bovenlinks;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bovenlinks {
+  0% {
+    transform: translate(0,0);
+  }
+  100% {
+    transform: translate(1vw,-5vw) scale(1.7);
+  }
+}
+
+#cirkel6 {
+  left: 40vw;
+  top: 5vw;
+}
+
+#cirkel7 {
+  left: 80vw;
+  top: 27vw;
+}
+
+#cirkel7:hover {
+  animation-name: boven2;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes boven2 {
+  0% {
+    transform: translate(0,0);
+  }
+  100% {
+    transform: translate(0,-1vw) scale(1.7);
+  }
+}
+
+#cirkel8 {
+  left: 47vw;
+  top: 31vw;
+}
+
+#cirkel8:hover {
+  animation-name: boven1;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes boven1 {
+  0% {
+    transform: translate(0,0);
+  }
+  100% {
+    transform: translate(0,-5vw) scale(1.7);
+  }
+}
+
+#cirkel9 {
+  left: 100vw;
+  top: 8vw;
+}
+
+#cirkel10 {
+  left: 112vw;
+  top: 26vw;
+}
+
+#cirkel11 {
+  left: 125vw;
+  top: 5vw;
+}
+
+.cirkels:hover {
+  transform: scale(1.7);
+}
+
+#pic1 {
+  height: 200px;
+  
+}
+
+#pic2,#pic4,#pic8,#pic9,#pic11 {
+  height: 200px;
+}
+
+#pic3,#pic5 {
+  width: 200px;
+}
+
+#pic6 {
+  height: 200px;
+  position: relative;
+  right: 80px;
+}
+
+#pic7 {
+  width: 200px;
+  position: relative;
+  bottom: 10px;
+}
+
+#pic10 {
+  height: 200px;
+  position: relative;
+  right: 80px;
+}
+
+.center {
+  top:0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}

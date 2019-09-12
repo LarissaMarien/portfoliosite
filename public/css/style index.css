@@ -1,0 +1,248 @@
+html,body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.8;
+  font-size: 16px;
+  background: #FFFAFA;
+  color: #848484;
+  font-weight: 300;
+  padding: 0px;
+	margin: 0px;
+}
+body.offcanvas {
+  overflow: hidden;
+}
+
+nav a {
+  background-color: transparent;
+  font-variant: small-caps;
+}
+
+nav a:hover {
+  text-decoration: none !important;
+  color: #2da9d7 !important;
+}
+nav a:active, a:focus {
+  outline: none;
+}
+
+p, ul, ol {
+  margin-bottom: 1.5em;
+  font-size: 15px;
+  color: #848484;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  text-decoration: none;
+}
+
+#myheader {
+  padding-top: 40px;
+  text-align: center;
+}
+#myheader #logobox img {
+  max-width: 30%;
+
+}
+#myheader nav {
+  padding-top: 40px;
+}
+#myheader nav ul {
+  padding: 0;
+  margin: 0;
+}
+#myheader nav ul li {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  zoom: 1;
+  display: inline;
+  list-style: none;
+  font-size: 15px;
+}
+#myheader nav ul li a {
+  color: #999999 !important;
+  padding: 10px;
+  text-decoration: none;
+}
+@media screen and (max-width: 480px) {
+  #myheader nav ul li a {
+    padding: 5px;
+  }
+}
+#myheader nav ul li a:hover, #myheader nav ul li a:active, #myheader nav ul li a:focus {
+  color: #000 !important;
+  text-decoration: none;
+  outline: none;
+}
+#myheader nav ul li.active a {
+  text-decoration: line-through !important;
+  color: black !important;
+}
+
+
+#myfooter {
+  float: left;
+  width: 100%;
+  background: #ebebeb;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #999999;
+}
+
+#myfooter nav ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+#myfooter nav ul li {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  display: inline;
+  list-style: none;
+  font-size: 15px;
+}
+#myfooter nav ul li a {
+  color: #999999 !important;
+  padding: 10px;
+  text-decoration: none;
+}
+@media screen and (max-width: 480px) {
+  #myfooter nav ul li a {
+    padding: 5px;
+  }
+}
+#myfooter nav ul li a:hover, #myfooter nav ul li a:active, #myfooter nav ul li a:focus {
+  color: #000 !important;
+  text-decoration: none;
+  outline: none;
+}
+#myfooter nav ul li.active a {
+  text-decoration: line-through !important;
+  color: black !important;
+}
+
+
+/* slideshow */
+* {
+  box-sizing: border-box;
+}
+.slideshow-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 10vh auto 10vh;
+  background-color: #983121;
+  height: 50vh;
+  overflow: hidden;
+
+}
+.button {
+  display: flex;
+  align-items: center;
+  padding: 0 6px 0 6px;
+  position: absolute;
+  height: 40vh;
+  top: 5vh;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.left {
+  left: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.right {
+  right: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.slideshow-wrapper ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.slideshow-wrapper ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.slide {
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transform: translateX(100%);
+  z-index: 1;
+  transition: transform 0.9s ease, opacity 1.5s ease;
+}
+.start-left {
+  transform: translateX(100%);
+}
+.start-right {
+  transform: translateX(100%);
+}
+.red {
+  background-image: url('/img/work2.jpg');
+  background-size: cover;
+  background-position: 50% 28%;
+}
+.blue {
+  background-image: url('/img/work5.png');
+  background-size: cover;
+  background-position: 50% 20%;
+}
+.orange {
+  background-image: url('/img/work1.jpg');
+  background-size: cover;
+  background-position: 50% 28%;
+}
+.green {
+  background-image: url('/img/pwork1.png');
+  background-size: cover;
+  background-position: 50% 40%;
+}
+.active {
+  font-family: "Roboto", sans-serif;
+  font-variant: small-caps;
+  font-size: 4vh;
+  transform: translateY(0);
+  opacity: 1;
+  z-index: 2;
+}
+.slideshow-indicator-wrapper {
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+}
+.slideshow-indicator {
+  background-color: #a9a9a9;
+  width: 10px;
+  height: 10px;
+  margin: 2px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+/*   transition: background-color 2s ease-in-out; */
+}
+.add-transition {
+  transition: background-color 2s ease-in-out;
+}
+.indicator-active {
+  background-color: #fff;
+}

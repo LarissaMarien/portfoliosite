@@ -1,0 +1,40 @@
+<% include header %>
+<link rel="stylesheet" href="/css/style detail.css">
+
+<article>
+
+<div class=picblock>
+  <img src="<%=post.imageURL %>" alt="<%=post.imageAlt %>" class="blogpic">
+</div>
+
+<div class="blogtextblock">
+
+    <h1><%=post.title %></h1>
+    <div class="contentblog"><%-post.content %></div>
+    <iframe class="<%=post.display %>"src="<%=post.extracontent %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <img id="extrapic" class="<%=post.extradisplay %>" src="<%=post.extraIMG %>">
+
+  <div class="detailbar">
+    <p class="datedetail">made around: <%=post.date %></p>
+    <p class="category">made with: <%=post.category %></p>
+    <p class="author">made by: <%=post.author %></p>
+  </div>
+
+</div>
+
+<div class="vvbuttons">
+<%
+postId = parseInt(postId);
+lastPostId = parseInt(lastPostId);
+%>
+<% if ( postId > 0) { %>
+<a class="vorigebutton" href="/blog/<%=postId-1 %>">previous</a>
+<% } %>
+<% if ( postId < lastPostId) { %>
+<a class="volgendebutton" href="/blog/<%=postId+1 %>">next</a>
+<% } %>
+</div>
+
+</article>
+
+<% include footer %>

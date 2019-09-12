@@ -1,0 +1,301 @@
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  background-color: black;
+}
+
+header {
+  font-weight: bold;
+  background-color: black;
+  height: 9vh;
+  margin: 2rem;
+
+}
+
+.logo {
+  height: 8rem;
+  position: relative;
+  z-index: 4;
+}
+
+.navicon {
+  height: 3rem;
+  display: block;
+  margin-left: 80vw;
+  margin-top: -8rem;
+}
+
+nav {
+  display: none;
+}
+
+main {
+  max-width: 85vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+
+.imageslider {
+  height: 25vh;
+  width: 104,7vw;
+  margin-top: -2.3rem;
+  margin-left: -5%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.imageslider img {
+  z-index: 1;
+  height: 25vh;
+  width: 105vw;
+  animation-name: picslider;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+
+@keyframes picslider {
+      5%, 15% {
+            transform: translatex(-105vw);
+      }
+      20%, 30% {
+            transform: translatex(-210vw);
+      }
+      35%, 45% {
+            transform: translatex(-105vw);
+      }
+      50%, 60% {
+            transform: translatex(-105vw);
+      }
+      65%, 100% {
+            transform: translatex(0px);
+      }
+}
+
+h1 {
+  color: white;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+section {
+  height: 30rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  border: 5px solid rgb(133,93,62);
+}
+
+section a {
+  text-decoration: none;
+  color: rgba(0,0,0,0);
+  display: block;
+  height: inherit;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+section a:hover {
+  color: white;
+  background-color: rgba(133,93,62,0.5);
+}
+
+section span {
+  display: block;
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.item1 {
+  background-image: url("pic4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.item2 {
+  background-image: url("pic6.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.item3 {
+  background-image: url("pic5.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.item4 {
+  background-image: url("pic7.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+p {
+  color: white;
+  font-weight: 400;
+}
+
+h3 {
+  color: white;
+  font-weight: normal;
+  margin-bottom: 2rem;
+  margin-left: 5vw;
+}
+
+.agenda {
+  width: 85vw;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  grid-gap: 2px;
+}
+.vak {
+  text-decoration: none;
+  background-color: rgb(133,93,62);
+  box-sizing: border-box;
+  color: black;
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 10px;
+  height: 8vw;
+}
+
+#headbox {
+  background-color: white;
+
+}
+
+#hoverbox:hover {
+  background-color: red;
+}
+
+.vak a {
+  text-decoration: none;
+  color: white;
+}
+
+#darkbox {
+  background-color: rgba(133,93,62,0.5);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+}
+
+footer p {
+  line-height: 3rem;
+}
+
+li {
+  display: inline;
+}
+
+li a{
+  margin-bottom: 1rem;
+  color: rgb(133,93,62);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+ul {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.line {
+  height: 2px;
+  width: 104,7vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  background-color: rgb(133,93,62);
+}
+
+@supports (grid-area: auto) {
+
+@media (min-width: 700px) {
+
+      .navicon {
+        opacity: 0;
+      }
+
+      nav {
+        display: block;
+        margin-left: 30vw;
+      }
+
+      nav a {
+        font-size: 1.8vw;
+        text-decoration: none;
+        color: rgb(133,93,62);
+        margin-right: 4vw;
+      }
+
+      .imageslider {
+        height: 35vh;
+
+      }
+
+      .imageslider img {
+        height: 35vh;
+      }
+
+      #newsitems {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+      }
+
+      .vak {
+        padding-top: 3vw;
+        font-size: 1.7rem;
+      }
+
+  }
+
+@media (min-width: 1000px) {
+
+      .imageslider {
+        height: 55vh;
+
+      }
+
+      .imageslider img {
+        height: 55vh;
+      }
+
+      #newsitems {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 20px;
+      }
+
+      .vak {
+        padding-top: 1.5vw;
+        height: 4vw;
+        font-size: 2rem;
+      }
+
+  }
+
+}
